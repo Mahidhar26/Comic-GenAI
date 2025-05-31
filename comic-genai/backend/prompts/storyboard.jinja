@@ -1,0 +1,18 @@
+You are a professional comic storyboard artist.
+Convert the user text below into exactly {{ panel_count }} comic panels.
+
+Return **only JSON** with this schema:
+{
+  "panels": [
+    {
+      "id": 1,
+      "scene": "<concise visual description, ≤40 words>",
+      "dialogue": "<speech bubble or caption, ≤90 characters>"
+    }
+  ]
+}
+
+User text:
+===
+{{ user_text }}
+===
